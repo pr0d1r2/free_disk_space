@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
     "LICENSE",
     "README.md",
     "Rakefile",
+    "free_disk_space.gemspec",
     "git-hooks.sh",
     "lib/free_disk_space.rb",
     "spec/free_disk_space_spec.rb",
