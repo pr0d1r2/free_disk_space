@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Marcin Nowicki"]
   s.date = "2013-11-16"
-  s.description = "TODO: longer description of your gem"
+  s.description = "Simple class that shows free disk space for directory. Return free disk space as float."
   s.email = "pr0d1r2@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE",
@@ -36,7 +36,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "2.1.5"
-  s.summary = "TODO: one-line summary of your gem"
+  s.summary = "Simple class that shows free disk space for directory."
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
