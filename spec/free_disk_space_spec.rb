@@ -13,41 +13,41 @@ describe FreeDiskSpace do
   its(:dir) { should == dir }
 
   describe 'class method' do
-    let(:expected_return) { double('expected_return') }
     before do
-      described_class.should_receive(:new).with(dir).twice.and_return(the_object)
-      the_object.should_receive(expected_method).and_return(expected_return)
+      the_object.stub(:filesystem_stat => filesystem_stat)
+      described_class.should_receive(:new).with(dir).and_return(the_object)
     end
     subject { described_class.send(expected_method, dir) }
 
     describe '.terabytes' do
       let(:expected_method) { :terabytes }
+      let(:blocks_available) { 30000000 }
 
-      it { should == expected_return }
+      it { should == 0.027939677238464355 }
     end
 
     describe '.gigabytes' do
       let(:expected_method) { :gigabytes }
 
-      it { should == expected_return }
+      it { should == 0.00286102294921875 }
     end
 
     describe '.megabytes' do
       let(:expected_method) { :megabytes }
 
-      it { should == expected_return }
+      it { should == 2.9296875 }
     end
 
     describe '.kilobytes' do
       let(:expected_method) { :kilobytes }
 
-      it { should == expected_return }
+      it { should == 3000.0 }
     end
 
     describe '.bytes' do
       let(:expected_method) { :bytes }
 
-      it { should == expected_return }
+      it { should == 3072000.0 }
     end
   end
 
