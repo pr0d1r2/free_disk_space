@@ -24,7 +24,7 @@ Then just use in code:
 
 OR:
 
-    free_disk_space = FreeDiskSpace.new
+    free_disk_space = FreeDiskSpace.new('/')
     free_disk_space.terabytes
     free_disk_space.gigabytes
     free_disk_space.megabytes
