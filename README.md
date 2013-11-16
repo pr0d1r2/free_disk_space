@@ -14,6 +14,8 @@ OR in Gemfile:
     gem 'free_disk_space'
 
 
+Then just use in code:
+
     FreeDiskSpace.terabytes('/')
     FreeDiskSpace.gigabytes('/')
     FreeDiskSpace.megabytes('/')
