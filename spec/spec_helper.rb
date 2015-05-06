@@ -1,6 +1,7 @@
 require 'simplecov'
 SimpleCov.start
 SimpleCov.minimum_coverage 100
+SimpleCov.refuse_coverage_drop
 
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
