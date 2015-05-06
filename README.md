@@ -1,11 +1,8 @@
-free_disk_space
-===============
+# free_disk_space [![Build Status](https://travis-ci.org/pr0d1r2/free_disk_space.svg?branch=master)](https://travis-ci.org/pr0d1r2/free_disk_space)
 
 Simple class that shows free disk space for directory. Return free disk space as float.
 
-
-Usage
------
+## Usage
 
     gem install free_disk_space
 
